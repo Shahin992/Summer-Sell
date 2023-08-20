@@ -16,8 +16,6 @@ function cardclicked (target){
    const getTotalPrice =target.parentNode.parentNode.parentNode.parentNode.childNodes[5].childNodes[1].childNodes[3].childNodes[5].childNodes[1].childNodes[1];
    const totalString = getTotalPrice.innerText;
    const totalStringConvert =  parseFloat(totalString);
-   
-
 
     total = priceConvert + totalStringConvert ;
     getTotalPrice.innerText = total.toFixed(2);
@@ -96,13 +94,8 @@ document.getElementById('homebtn').addEventListener('click', function(){
    
    
    cartClear('grandTotal');
-
-
    cartClear('discount-value')
-
-
    cartClear('Price')
-    
 
     const parent = document.getElementById('title-box')
     const listClear = parent.innerText
